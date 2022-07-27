@@ -9,7 +9,7 @@ Show greetings to user by time fast and easy!
 Then...
 
 ```
-import {GreetingsToUser} from 'GreetingsToUser'
+import {GreetingsToUser} from 'greetingstouser'
 
 GreetingsToUser(new Date(), 'SR Joy')
 
