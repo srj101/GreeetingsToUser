@@ -4,7 +4,7 @@ Show greetings to user by time fast and easy!
 
 # Installation
 
-`npm i GreetingsToUser --save`
+`npm i greetingstouser --save`
 
 Then...
 
