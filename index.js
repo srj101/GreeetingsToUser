@@ -1,11 +1,23 @@
-function GreetingsToUser(date = new Date(), userName = "SR Joy") {
+function GreetingsToUser(
+  date = new Date(),
+  userName = "SR Joy",
+  options = {
+    showName: true,
+  }
+) {
   const hour = date.getHours();
   if (hour >= 5 && hour < 12) {
-    return `Good morning ${userName}`;
+    return options.showName === true
+      ? `Good morning ${userName}`
+      : `Good morning`;
   } else if (hour >= 12 && hour < 17) {
-    return `Good afternoon ${userName}`;
+    return options.showName === true
+      ? `Good afternoon ${userName}`
+      : `Good afternoon`;
   } else if ((hour >= 17 && hour <= 23) || hour < 5) {
-    return `Good evening ${userName}`;
+    return options.showName === true
+      ? `Good evening ${userName}`
+      : `Good evening`;
   }
 }
 
