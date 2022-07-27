@@ -11,7 +11,7 @@ Then...
 ```
 import {GreetingsToUser} from 'greetingstouser'
 
-GreetingsToUser(new Date(), 'SR Joy')
+GreetingsToUser(new Date(),{showName:true,name="SR Joy"})
 
 ```
 
@@ -20,4 +20,7 @@ GreetingsToUser(new Date(), 'SR Joy')
 GreetingsToUser supports 2 options
 
 - _Date_ - \_date (Javascript Date Object , i.e new Date()) Optional
-- _Name_ - \_name () (String) Required
+
+- \_Options
+  - _showName_ - `false` | `true` (Default is `true`)
+  - _Name_ - \_name (String) `Optional` (Default is `SR Joy`)
